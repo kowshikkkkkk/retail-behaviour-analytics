@@ -74,7 +74,7 @@ def main():
         ax.plot(d["month"], r, lw=2.2 if g == DEFAULT_GAP else 1,
                 label=f"dormant after {g} quiet months" + (" (main)" if g == DEFAULT_GAP else ""))
     ax.set_ylabel("Share of dormant accounts that bought again (3-month avg)")
-    ax.set_title("Reactivation rate (observational; first months have too few dormant accounts)")
+    ax.set_title("Reactivation rate (observational; 2018 not comparable with later years)")
     ax.legend(fontsize=8)
     fig.tight_layout()
     fig.savefig(figs / "reactivation_rate.png", dpi=150)
