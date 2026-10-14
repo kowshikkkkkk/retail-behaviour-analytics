@@ -1,0 +1,4 @@
+shopping_freq,accounts,median_spend,mean_spend,median_order_days
+Less than 5 times per month,3227,3193.0,4795.0,64.0
+5 - 10 times per month,1407,9807.0,11899.0,198.0
+More than 10 times per month,380,17862.0,20626.0,350.0
