@@ -42,7 +42,7 @@ flowchart LR
   D --> E["Python analysis<br/>activity, monetization, segmentation,<br/>inference, A/B simulation"]
   E --> F["reports/tables and figures"]
   F --> G["reports/memo.md"]
-  T["pytest: 48 tests<br/>hand-checked and independent pandas"] -.-> D
+  T["pytest: 49 tests<br/>hand-checked and independent pandas"] -.-> D
   T -.-> E
 ```
 
@@ -91,8 +91,9 @@ python -m src.monetization           # concentration, category mix
 python -m src.segmentation           # RFM segments
 python -m src.inference              # bootstrap intervals, two tests
 python -m src.ab_simulation          # SIMULATED A/B test
-pytest -q                            # 41 pass without the data (7 data-dependent tests skip)
-RUN_REAL_DATA=1 pytest -q            # 48 pass with the data in place
+streamlit run app/streamlit_app.py   # dashboard, reads only reports/tables
+pytest -q                            # 42 pass without the data (7 data-dependent tests skip)
+RUN_REAL_DATA=1 pytest -q            # 49 pass with the data in place
 ```
 
 Fixed seeds: bootstrap 42, simulation 2026. Python 3.11.
@@ -108,6 +109,7 @@ Fixed seeds: bootstrap 42, simulation 2026. Python 3.11.
 ```
 sql/        DuckDB queries (01 to 11)
 src/        load, clean, audit, activity, monetization, segmentation, inference, ab_simulation
+app/        Streamlit dashboard (reads only the aggregate tables in reports/tables)
 tests/      pytest, including real-data checks
 reports/    memo.md, tables/, figures/
 docs/       metric definitions, licence notes
