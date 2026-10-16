@@ -1,6 +1,6 @@
 # Memo: Who drives spend, and how to test a win-back
 
-**To:** [Product manager] | **From:** [your name] | **Date:** 15 Oct 2026
+**To:** Product manager | **From:** Kowshik | **Date:** 15 Oct 2026
 
 ## Bottom line
 About 40% of accounts make 80% of the spend, going quiet is rarely final (about 6 in 10 lapsed accounts were active again a year later), and a win-back test would take most of a year to read at this size. Aim for a bigger lever, and agree the revenue guardrail before launching.
